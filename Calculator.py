@@ -8,21 +8,22 @@ My first ever Python Script. Yay?
 Made by Xell/Vosik
 made with Love
 """
+    
 Loop=input("Start Calculator? Y/N")
 while Loop == "Y":
  Functions = "[Divide, Multi, Plus, Minus, Circumference]"
  print(Functions)
  A1=input("You can Choose between the Functions above_")
- N1=float(input("Enter first Number"))
+ N1=float(input("First Number : "))
  if A1 == "Circumference":
-  print("Second Number will be set to 3.14 after all")
- N2=float(input("Enter second Number"))
+  print("Second Number will be set forcefully to 3.14")
+ N2=float(input("Second Number: "))
 
 
  if A1 not in Functions:
   print("ERROR! NO VALID FUNCTION")
  elif A1 in Functions:
-  print("vvv|Done|vvv")
+  print("v-v-v|Done|v-v-v")
  
  if A1 == "Circumference":
   N2=float("3.14")
@@ -43,7 +44,7 @@ while Loop == "Y":
   print(N1 - N2)
   
  if A1 in Functions:
-  print("^^^|Done|^^^")
+  print("^-^-^|Done|^-^-^")
   
  print("=======End of Calculation=======")
  
