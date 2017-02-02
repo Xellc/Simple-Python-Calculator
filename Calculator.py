@@ -10,10 +10,12 @@ made with Love
 """
 Loop=input("Start Calculator? Y/N")
 while Loop == "Y":
- Functions = "[Divide, Multi, Plus, Minus]"
+ Functions = "[Divide, Multi, Plus, Minus, Circumference]"
  print(Functions)
  A1=input("You can Choose between the Functions above_")
  N1=float(input("Enter first Number"))
+ if A1 == "Circumference":
+  print("Second Number will be set to 3.14 after all")
  N2=float(input("Enter second Number"))
 
 
@@ -22,7 +24,9 @@ while Loop == "Y":
  elif A1 in Functions:
   print("vvv|Done|vvv")
  
- 
+ if A1 == "Circumference":
+  N2=float("3.14")
+  print(N1 * N2)
 
 
 
