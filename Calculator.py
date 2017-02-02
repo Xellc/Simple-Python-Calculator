@@ -19,7 +19,12 @@ while Loop == "Y":
   print("Second Number will be set forcefully to 3.14")
  N2=float(input("Second Number: "))
 
+ if N1 == "0":
+  end
 
+ if N2 == "0":
+  end
+  
  if A1 not in Functions:
   print("ERROR! NO VALID FUNCTION")
  elif A1 in Functions:
@@ -29,13 +34,11 @@ while Loop == "Y":
   N2=float("3.14")
   print(N1 * N2)
 
-
-
  if A1 == "Divide":
   print(N1 / N2)
 
  if A1 == "Multi":
-  print(N1 * N2)
+  print(N1 * N2) 
  
  if A1 == "Plus":
   print(N1 + N2)
